@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-for i in range(100):
-    if int(i / 10) != i % 10 and int(i / 10) < i % 10:
-        print("{}{}".format(int(i / 10), i % 10), end="")
-        if (i != 89):
-            print(", ", end="")
-print("")
+# Author - Oscar Omido
+
+def uppercase(str):
+    """Print a string in uppercase."""
+    for c in str:
+        if ord(c) >= 97 and ord(c) <= 122:
+            c = chr(ord(c) - 32)
+        print("{}".format(c), end="")
+    print("")
